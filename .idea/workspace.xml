@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="747319dd-80f7-4601-9fc7-7858f83c5fc8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Select.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Select.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Theme.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/Checkbox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="1121">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
@@ -30,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/Radio.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state relative-caret-position="132">
+              <caret line="12" column="27" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="27" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -42,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/Theme.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="89">
+              <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -51,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/Select.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="98" column="13" lean-forward="true" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+            <state relative-caret-position="165">
+              <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -71,36 +71,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>13</find>
-      <find>WIDTH</find>
-      <find>width</find>
-      <find>10</find>
-      <find>after</find>
-      <find>blue</find>
-      <find>input</find>
-      <find>check</find>
-      <find>checkbox</find>
-      <find>select</find>
-      <find>label</find>
-      <find>active</find>
-      <find>hidden</find>
-      <find>hover</find>
-      <find>onclick</find>
-      <find>acive</find>
-      <find>red</find>
-      <find>so</find>
-      <find>border</find>
-      <find>class</find>
+      <find>selectGroup</find>
+      <find>firstS</find>
+      <find>First</find>
+      <find>Wait</find>
       <find>==</find>
-      <find>setWidth</find>
-      <find>setData</find>
-      <find>setValue</find>
-      <find>selectitem</find>
-      <find>div</find>
-      <find>selectComp</find>
-      <find>Item</find>
-      <find>item</find>
-      <find>Select</find>
+      <find>yellow</find>
+      <find>value</find>
+      <find>Value</find>
+      <find>name</find>
+      <find>waitSelect</find>
+      <find>selectedList</find>
+      <find>style</find>
+      <find>WaitSelect</find>
+      <find>map</find>
+      <find>!=</find>
+      <find>2px</find>
+      <find>backgrou</find>
+      <find>onClick</find>
+      <find>wait</find>
+      <find>setCh</find>
+      <find>width</find>
+      <find>daa</find>
+      <find>data</find>
+      <find>background</find>
+      <find>#409EFF</find>
+      <find>border</find>
+      <find>select</find>
+      <find>handle</find>
+      <find>console.log</find>
+      <find>90</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,9 +116,9 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/styles/Input.js" />
         <option value="$PROJECT_DIR$/src/styles/index.js" />
-        <option value="$PROJECT_DIR$/src/views/Theme.js" />
         <option value="$PROJECT_DIR$/src/styles/Radio.js" />
         <option value="$PROJECT_DIR$/src/styles/Checkbox.js" />
+        <option value="$PROJECT_DIR$/src/views/Theme.js" />
         <option value="$PROJECT_DIR$/src/styles/Select.js" />
       </list>
     </option>
@@ -129,11 +129,11 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="950" />
     <option name="y" value="-10" />
-    <option name="width" value="979" />
-    <option name="height" value="1049" />
+    <option name="width" value="980" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -173,8 +173,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Documents/handamclient" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -214,14 +215,18 @@
       <workItem from="1571756444227" duration="67000" />
       <workItem from="1572163661989" duration="25631000" />
       <workItem from="1572229481462" duration="2504000" />
+      <workItem from="1572232201985" duration="518000" />
+      <workItem from="1572307351932" duration="49000" />
+      <workItem from="1572775463956" duration="9899000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52309000" />
+    <option name="totallyTimeSpent" value="62775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.122934565" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -235,7 +240,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.27801418" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.27801418" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -297,15 +302,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/Checkbox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="1121">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/Radio.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        <state relative-caret-position="132">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="27" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
@@ -314,15 +319,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/Theme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="89">
+          <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/Select.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="98" column="13" lean-forward="true" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+        <state relative-caret-position="165">
+          <caret line="10" column="54" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>

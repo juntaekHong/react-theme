@@ -9,7 +9,7 @@ const ThemeView = () => {
             'value': ['Soccer','Baseball','basketball', 'another'],
     }];
 
-    const [data, setData] = useState(initData);
+    const [data] = useState(initData);
 
     return (
         <Wrap>
@@ -33,9 +33,10 @@ const ThemeView = () => {
                 <h3>Select</h3>
                 <SelectGroup data={data}/>
 
-                <hr />
+                <h4>multiple Select</h4>
+                <SelectGroup data={data} multiple={true}/>
 
-
+                <hr/>
 
 
         </Wrap>

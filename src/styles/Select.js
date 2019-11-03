@@ -3,25 +3,44 @@ import styled from 'styled-components';
 
 
 
-const SelectComponent = ({data}) => {
+const SelectComponent = ({props, data, multiple}) => {
 
     const [hidden, setHidden] = useState(true);
-    const [value, setValue] = useState('');
+    const [value, setValue] = useState([]);
+    const [multi, setMulti] = useState(false);
+    const [changeWidth, setChangeWidth] = useState(100);
 
-    useEffect(() => {
-    }, [setValue, hidden]);
+    useEffect( () => {
+        multiple === true ?
+            setMulti(true)
+            :
+            setMulti(false)
+
+
+
+    }, [multiple]);
+
+
+    const refreshList = (data) => {
+        setValue(value.filter(item => item !== data));
+        setChangeWidth(changeWidth - 13 - 5 * data.length);
+    };
+
+    const changeProperty = (data) => {
+        setChangeWidth(changeWidth + 13 + 5 * data.length);
+        setValue([...value, data]);
+
+    };
 
     const SelectItem = props => {
 
         return (
-            <Wrap style={{display: hidden === true ? 'none' : 'block'}} onClick={ () => {setHidden(true)}}>
+            <Wrap onClick={ () => {multi === false ? setHidden(true) : setHidden(false)}}>
                 {
                     props.value.map((data, i) => {
                         return (
-                            <Item className="item" key={i} onClick={() => {setValue(data)}}>
-                                {/*<select {...props} />*/}
-                                {/*<div value={data} onClick={() => {hidden === true ? setHidden(false) : setHidden(true)}}>{data}</div>*/}
-                                <div>{data}</div>
+                            <Item className="item" key={i} onClick={() => {multi === false ? setValue(data) : value.indexOf(data) !== -1 ? refreshList(data)  : changeProperty(data)}}>
+                                <div  style={{color: value.indexOf(data) !== -1 ? 'red' : ''}}>{data}</div>
                             </Item>
                         )
                     })
@@ -31,8 +50,34 @@ const SelectComponent = ({data}) => {
     };
 
     return (
+
         <SelectGroup>
-            <FirstSelect onClick={() => {hidden === true ? setHidden(false) : setHidden(true)}}>{value === '' ? `Select` : value}</FirstSelect>
+            <WaitSelect style={{width: changeWidth + "px"}} onClick={() => {hidden === true ? setHidden(false) : setHidden(true)}}>
+                <div>
+                    {
+                        value.length === 0 ?
+                            `Select`
+                            :
+                            multi === false ?
+                                <div style={{display: 'inline', paddingLeft: '5px', paddingRight: '5px', marginRight: '3px', backgroundColor: '#7FF2FF', border: '1px solid #409EFF', borderRadius: '10px'}}>{value}</div>
+                                :
+                                value.map((data, i) => {
+                                    return(
+
+                                        <div key={i} style={{display: 'inline', paddingLeft: '5px', paddingRight: '5px', marginRight: '3px', backgroundColor: '#7FF2FF', border: '1px solid #409EFF', borderRadius: '10px'}}>{data}</div>
+                                    )
+                                })
+                    }
+                </div>
+                <div style={{position: 'relative', right: 5}}>
+                    {
+                        hidden === false ?
+                            '▲'
+                            :
+                            '▼'
+                    }
+                </div>
+            </WaitSelect>
             <div name={data.name}  style={{display: hidden === true ? 'none' : 'block'}}>
                 {
                     data.map((data, i) => {
@@ -48,7 +93,8 @@ const SelectComponent = ({data}) => {
 
 export default SelectComponent;
 
-const SelectGroup = styled.div``;
+const SelectGroup = styled.div`
+`;
 
 const Wrap = styled.div`
     display: flex;
@@ -59,24 +105,26 @@ const Wrap = styled.div`
     margin-top: 10px;
     margin-left: 10px;
        
-    border: 2px solid #909399;
-    border-radius: 10%;
+    border: 1px solid #409EFF;
+    border-radius: 10px;
 
 `;
 
-const FirstSelect = styled.div`
+const WaitSelect = styled.div`
     display: flex;
-    width: 90px;
+    justify-content: space-between;
+    // width: 90px;
+    height: 30px;
     align-items: center;
     font-size: 15px;
     margin-left: 10px;
     padding-left: 10px;
-    border: 2px solid #909399;
-    border-radius: 10%;
+    border: 1px solid #409EFF;
+    border-radius: 999px;
     
     :hover {
         cursor: pointer;   
-    }
+    }   
 `;
 
 const Item = styled.label`
@@ -97,7 +145,7 @@ const Item = styled.label`
     overflow: hidden;
     
     :active {
-        background-color: yellow;
+        background-color: #C0C4CC;
         
         &nth-child(n+2) {
             // display: block;  
@@ -107,7 +155,7 @@ const Item = styled.label`
     
     :hover {
 
-        background-color: yellow;
+        background-color: #C0C4CC;
         
         cursor: pointer;
     }
