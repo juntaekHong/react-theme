@@ -53,18 +53,18 @@ const SelectComponent = ({props, data, multiple}) => {
 
         <SelectGroup>
             <WaitSelect style={{width: changeWidth + "px"}} onClick={() => {hidden === true ? setHidden(false) : setHidden(true)}}>
-                <div>
+                <div style={value.length === 0 ? {color: '#C0C4CC'} : {}}>
                     {
                         value.length === 0 ?
                             `Select`
                             :
                             multi === false ?
-                                <div style={{display: 'inline', paddingLeft: '5px', paddingRight: '5px', marginRight: '3px', backgroundColor: '#7FF2FF', border: '1px solid #409EFF', borderRadius: '10px'}}>{value}</div>
+                                <div>{value}</div>
                                 :
                                 value.map((data, i) => {
                                     return(
 
-                                        <div key={i} style={{display: 'inline', paddingLeft: '5px', paddingRight: '5px', marginRight: '3px', backgroundColor: '#7FF2FF', border: '1px solid #409EFF', borderRadius: '10px'}}>{data}</div>
+                                        <div key={i} style={{display: 'inline', padding: '3px', marginRight: '3px', color: 'white', fontFamily: 'bold', backgroundColor: '#409EFF', border: '1px solid #409EFF', borderRadius: '5px'}}>{data}</div>
                                     )
                                 })
                     }
